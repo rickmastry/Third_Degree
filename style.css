@@ -56,15 +56,31 @@ h2{
 @media only screen and (max-width: 768px) and (orientation : portrait) {
 
     h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-left: auto;
     }
 
     h2{
-        font-size: 1rem;
+        font-size: 1.5rem;
         letter-spacing:25px;
-        margin-top:35rem;
+        margin-top:40rem;
         transform: none;
-        margin-left:50px;
+        margin-left:40px;
     }
+}
+
+@media only screen and (max-width: 748px) and (orientation : landscape) {
+    h1{
+        font-size: 2rem;
+        margin-left: auto;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        letter-spacing:25px;
+        margin-top:40rem;
+        transform: none;
+        margin-left:40px;
+    }
+
 }
