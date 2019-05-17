@@ -14,9 +14,9 @@ function init(){
     
     document.body.appendChild(renderer.domElement);
     
-    const geometry = new THREE.BoxGeometry( 3, 3, 3 );
+    const geometry = new THREE.BoxGeometry( 2.5, 2.5, 2.5 );
     //const material = new THREE.MeshBasicMaterial( {color: 0x0000ff} );
-    const texture = new THREE.TextureLoader().load('textures/ThirdDegreelg3.png');
+    const texture = new THREE.TextureLoader().load('textures/ThirdDegreeLg3.png');
     const material = new THREE.MeshBasicMaterial( {map: texture} );
 
     cube = new THREE.Mesh( geometry, material );
