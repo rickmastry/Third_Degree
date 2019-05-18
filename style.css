@@ -1,9 +1,24 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
 body{
     margin:0;
+    padding:0;
 }
 canvas{
     width:100%;
     height:100%;
+    
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .title{
@@ -40,7 +55,6 @@ h2{
     justify-content: center;
     align-content: center;
     text-align: center;
-    transform: translate(50%,-50%);
     text-transform: uppercase;
     color:#C0C0C0;
     font-size: 2rem;
@@ -58,30 +72,63 @@ h2{
 
     h1{
         font-size: 2rem;
-        margin-left: auto;
+      
     }
 
     h2{
         font-size: 1.5rem;
-        letter-spacing:25px;
+        letter-spacing:10px;
         margin-top:40rem;
         transform: none;
-        margin-left:40px;
+        
     }
 }
 
 @media only screen and (max-width: 748px) and (orientation : landscape) {
     h1{
-        font-size: 2rem;
+        font-size: 1rem;
         margin-left: auto;
     }
 
     h2{
         font-size: 1rem;
-        letter-spacing:25px;
+        letter-spacing:10px;
         margin-top:22rem;
         transform: none;
-        margin-left:40px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+}
+
+@media only screen and (max-width: 667px) and (orientation : landscape){
+    h1{
+        font-size: 1.5rem;
+      
+    }
+
+    h2{
+        font-size: 1rem;
+        letter-spacing:10px;
+        margin-top:18rem;
+        transform: none;
+        
+    }
+
+}
+
+@media only screen and (max-width: 380px) and (orientation : portrait){
+    h1{
+        font-size: 1.5rem;
+      
+    }
+
+    h2{
+        font-size: 1rem;
+        letter-spacing:10px;
+        margin-top:35rem;
+        transform: none;
+        
     }
 
 }

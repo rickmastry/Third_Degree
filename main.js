@@ -1,7 +1,7 @@
-var audio = document.getElementById("myaudio");
-audio.volume = 0.7;
 
-let scene, camera, renderer, cube;
+
+let scene, camera, renderer, cube, audio;
+
 
 function init(){
     scene = new THREE.Scene();
@@ -23,6 +23,9 @@ function init(){
     scene.add( cube );
     
     camera.position.z = 5;
+    audio = document.getElementById("myaudio");
+    audio.volume = 0.7;
+   
 }
 
 
@@ -43,6 +46,7 @@ function onWindowResize() {
 }
 
 window.addEventListener('resize', onWindowResize, false );
+
 
 init();
 animate();
